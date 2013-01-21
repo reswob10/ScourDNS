@@ -25,11 +25,10 @@ parser.add_argument('-top', dest='topdoms', action='store', default = 10, help =
 parser.add_argument('-bottom', dest='botdoms', action='store', default = 30, help = "This is the number of bottom domains to list. Default is 30.")
 parser.add_argument('-s', dest='sleep1', action='store', default = 0, help="This is how many seconds the program should sleep before running again. Default is 0, which means the program stops after one run.")
 parser.add_argument('-test', action='store_true', help="set this switch to tell the program whether or not run is testing.  No changes to master file are made.")
-parser.add_argument('-update', action='store_true', help='set this switch to update the config file')
 parser.add_argument('-create', action='store_true', help='set this switch to create a new config file.  NOTE: This will overwrite any old config files')
 parser.add_argument('-config', action='store_true', help='set this swtich to print the configuration then exit.')
 parser.add_argument('-ig', action='store_true', help='set this switch to ignore tracking web sites.  See configuration for list')
-parser.add_argument('-d', dest='days', action='store', default = 1, help =  "Number of days ago to start checking DNS logs.  Default is 1 day.")
+parser.add_argument('-d', dest='days', action='store', default = 1, help =  "Number of days in the past to start checking DNS logs.  Default is 1 day.")
 #parser.add_argument('-help', action='store_true', help='display help')
 args = parser.parse_args()
 

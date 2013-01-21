@@ -1,0 +1,278 @@
+"Name","Entity","Notes"
+".aero","air-transport industry","Must verify eligibility for registration; only those in various categories of air-travel-related entities may register."
+".asia","Asia-Pacific region","This is a TLD for companies, organizations, and individuals based in the region of Asia, Australia, and the Pacific."
+".biz","business","This is an open TLD; any person or entity is permitted to register; however, registrations may be challenged later if they are not held by commercial entities in accordance with the domain's charter. This TLD was created to provide relief for the wildly popular .com TLD."
+".cat","Catalan","This is a TLD for Web sites in the Catalan language or related to Catalan culture."
+".com","commercial","This is an open TLD; any person or entity is permitted to register. Though originally intended for use by for-profit business entities, for a number of reasons it became the ""main"" TLD for domain names and is currently used by all types of entities including nonprofits, schools and private individuals. Domain name registrations may be challenged if the holder cannot prove an outside relation justifying reservation of the name, to prevent ""squatting""."
+".coop","cooperatives","The .coop TLD is limited to cooperatives as defined by the Rochdale Principles."
+".info","information","This is an open TLD; any person or entity is permitted to register."
+".int","international organizations","The .int TLD is strictly limited to organizations, offices, and programs which are endorsed by a treaty between two or more nations. However, there are a few grandfathered domain names that do not meet these criteria."
+".jobs","companies","The .jobs TLD is designed to be added after the names of established companies with jobs to advertise. At this time, owners of a ""company.jobs"" domain are not permitted to post jobs of third party employers."
+".mobi","mobile devices","Must be used for mobile-compatible sites in accordance with standards."
+".museum","museums","Must be verified as a legitimate museum."
+".name","individuals, by name","This is an open TLD; any person or entity is permitted to register; however, registrations may be challenged later if they are not by individuals (or the owners of fictional characters) in accordance with the domain's charter."
+".net","network","This is an open TLD; any person or entity is permitted to register. Originally intended for use by domains pointing to a distributed network of computers, or ""umbrella"" sites that act as the portal to a set of smaller websites."
+".org","organization","This is an open TLD; any person or entity is permitted to register. Originally intended for use by non-profit organizations, and still primarily used by some."
+".pro","professions","Currently, .pro is reserved for licensed or certified professionals worldwide. A professional seeking to register a .pro domain must provide their registrar with the appropriate credentials."
+".tel","Internet communication services","A contact directory housing all types of contact information directly in the Domain Name System."
+".travel","travel and tourism industry related sites","Must be verified as a legitimate travel-related entity."
+".xxx","adult entertainment","For sites providing sexually explicit content, such as pornography."
+".edu","educational","The .edu TLD is limited to specific educational institutions such as, but not limited to, primary schools, middle schools, secondary schools, colleges, and universities. In the US, its usability was limited in 2001 to post-secondary institutions accredited by an agency on the list of nationally recognized accrediting agencies maintained by the United States Department of Education. This domain is therefore almost exclusively used by US colleges and universities. Some institutions that do not meet the current registration criteria have grandfathered domain names."
+".gov","governmental","The .gov TLD is limited to governmental entities and agencies in the US."
+".mil","US military","The .mil TLD is limited to use by the US military."
+".ac","ﾠAscension Island","Commonly used for academic websites, such as universities"
+".ad","ﾠAndorra","Local trademark, trade name or citizenship required [3][4]"
+".ae","ﾠUnited Arab Emirates",
+".af","ﾠAfghanistan",
+".ag","ﾠAntigua and Barbuda",
+".ai","ﾠAnguilla",
+".al","ﾠAlbania","Citizenship required"
+".am","ﾠArmenia","(Also unofficially used by AM Radio Stations or related business)"
+".an","ﾠNetherlands Antilles","Local presence required; Netherland Antilles were dissolved on October 10, 2010;"
+".ao","ﾠAngola",
+".aq","ﾠAntarctica","Defined by the Antarctic Treaty as everything south of latitude 60ﾰS. AQ domain names are available to government organizations who are signatories to the Antarctic Treaty and to other registrants who have a physical presence in Antarctica."
+".ar","ﾠArgentina",
+".as","ﾠAmerican Samoa",
+".at","ﾠAustria",
+".au","ﾠAustralia","Includes Ashmore and Cartier Islands and Coral Sea Islands. ABN required."
+".aw","ﾠAruba","Restricted to registered Aruban companies, organisations and citizens"
+".ax","��land",
+".az","ﾠAzerbaijan",
+".ba","ﾠBosnia and Herzegovina",
+".bb","ﾠBarbados",
+".bd","ﾠBangladesh",
+".be","ﾠBelgium","(Also unofficially used in the canton of Berne, Switzerland)"
+".bf","ﾠBurkina Faso",
+".bg","ﾠBulgaria",
+".bh","ﾠBahrain",
+".bi","ﾠBurundi",
+".bj","ﾠBenin",
+".bm","ﾠBermuda","Local corporate registration required"
+".bn","ﾠBrunei",
+".bo","ﾠBolivia",
+".br","ﾠBrazil","Restricted. Registration is done under several categories (i.e.: .com.br for businesses, .gov.br for government agencies, etc.)[5]"
+".bs","ﾠBahamas",
+".bt","ﾠBhutan",
+".bv","ﾠBouvet Island","Not in use (Norwegian dependency; see .no)."
+".bw","ﾠBotswana",
+".by","ﾠBelarus",
+".bz","ﾠBelize",
+".ca","ﾠCanada","Subject to Canadian Presence Requirements."
+".cc","ﾠCocos (Keeling) Islands","(Australian territory: do not confuse with Cocos islands in Guam. Also used as a free domain service to the public as co.cc, cx.cc, cz.cc, or uni.cc domain.)"
+".cd","ﾠDemocratic Republic of the Congo",
+".cf","ﾠCentral African Republic",
+".cg","ﾠRepublic of the Congo",
+".ch","ﾠSwitzerland",
+".ci","�C�te d'Ivoire",
+".ck","ﾠCook Islands",
+".cl","ﾠChile",
+".cm","ﾠCameroon","A local entity/company in Cameroon is required to register a domain name."
+".cn","ﾠPeople's Republic of China","A local company in China is required to register a domain name. Hong Kong and Macau also maintain TLDs."
+".co","ﾠColombia","Marketed as a global domain - recognized as a gccTLD by Google. Anyone can register."
+".cr","ﾠCosta Rica",
+".cs","ﾠCzechoslovakia, Serbia, Montenegro","Czecho-Slovakia domain has not been use since 1993. The ISO-code cs was later allocated for Serbia and Montenegro, which used .yu instead."
+".cu","ﾠCuba",
+".cv","ﾠCape Verde",
+".cx","ﾠChristmas Island",
+".cy","ﾠCyprus",
+".cz","ﾠCzech Republic",
+".dd","ﾠEast Germany","Was proposed, but never implemented due to German re-unification."
+".de","ﾠGermany","German postal address for administrative contact (admin-c) required. Proxy registrations are allowed."
+".dj","ﾠDjibouti",
+".dk","ﾠDenmark",
+".dm","ﾠDominica",
+".do","ﾠDominican Republic",
+".dz","ﾠAlgeria",
+".ec","ﾠEcuador",
+".ee","ﾠEstonia","Anyone can register but local administrative contact is required."
+".eg","ﾠEgypt",
+".eh","ﾠWestern Sahara",".eh is reserved for Western Sahara, but does not exist in the root."
+".er","ﾠEritrea","Inactive - The domain registrar Eritrea Telecommunication Services Corporation offers no services to register domains."
+".es","ﾠSpain",
+".et","ﾠEthiopia",
+".eu","ﾠEuropean Union","Restricted to institutions (under the .europa.eu subdomain), companies, and individuals in the European Union (or in other overseas or autonomous regions of member countries)."
+".fi","ﾠFinland","Open for registration to individuals/companies around Europe."
+".fj","ﾠFiji",
+".fk","ﾠFalkland Islands",
+".fm","ﾠFederated States of Micronesia","(Also unofficially used by FM Radio Stations or related business)"
+".fo","ﾠFaroe Islands",
+".fr","ﾠFrance","Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.[a 10]"
+".ga","ﾠGabon",
+".gb","ﾠUnited Kingdom","Seldom used; the primary ccTLD used is .uk for United Kingdom."
+".gd","ﾠGrenada",
+".ge","ﾠGeorgia","To register you must be either a citizen of Georgia, or a Georgian company."
+".gf","ﾠFrench Guiana",
+".gg","ﾠGuernsey",
+".gh","ﾠGhana",
+".gi","ﾠGibraltar",
+".gl","ﾠGreenland","(Also unofficially used in Galicia, Spain)"
+".gm","ﾠThe Gambia",
+".gn","ﾠGuinea","A local contact is required"
+".gp","�Guadeloupe","Still used for Saint-Barth�lemy and Saint-Martin"
+".gq","ﾠEquatorial Guinea",
+".gr","ﾠGreece",
+".gs","ﾠSouth Georgia and the South Sandwich Islands",
+".gt","ﾠGuatemala",
+".gu","ﾠGuam",
+".gw","ﾠGuinea-Bissau",
+".gy","ﾠGuyana",
+".hk","ﾠHong Kong","Special administrative region of the People's Republic of China."
+".hm","ﾠHeard Island and McDonald Islands",
+".hn","ﾠHonduras",
+".hr","ﾠCroatia",
+".ht","ﾠHaiti",
+".hu","ﾠHungary","Restricted to Hungarian companies, organisations and citizens"
+".id","ﾠIndonesia",
+".ie","ﾠRepublic of Ireland","Only available for Ireland-registered brands and companies. Foreign companies can register if doing business in Ireland or provide TM.[clarification needed] Since 2007 personal names are allowed to be registered subject to guidelines."
+,"ﾠNorthern Ireland",
+".il","ﾠIsrael",
+".im","ﾠIsle of Man",
+".in","ﾠIndia","Under INRegistry since April 2005 (except: gov.in, nic.in, mil.in, ac.in, edu.in, res.in)."
+".io","ﾠBritish Indian Ocean Territory",
+".iq","ﾠIraq",
+".ir","ﾠIran",
+".is","ﾠIceland",
+".it","ﾠItaly","Restricted to companies and individuals in the European Union."
+".je","ﾠJersey",
+".jm","ﾠJamaica",
+".jo","ﾠJordan",
+".jp","ﾠJapan","Restricted to individuals or companies with a physical address in Japan."
+".ke","ﾠKenya",
+".kg","ﾠKyrgyzstan",
+".kh","ﾠCambodia",
+".ki","ﾠKiribati",
+".km","ﾠComoros",
+".kn","ﾠSaint Kitts and Nevis",
+".kp","ﾠDemocratic People's Republic of Korea",
+".kr","ﾠRepublic of Korea",
+".kw","ﾠKuwait",
+".ky","ﾠCayman Islands","Restricted to qualified Cayman entities[8]"
+".kz","ﾠKazakhstan",
+".la","ﾠLaos","Currently being marketed as the unofficial domain for Los Angeles[9]"
+".lb","ﾠLebanon","Restricted to registration with a company in Lebanon"
+".lc","ﾠSaint Lucia",
+".li","ﾠLiechtenstein",
+".lk","ﾠSri Lanka",
+".lr","ﾠLiberia",
+".ls","ﾠLesotho",
+".lt","ﾠLithuania",
+".lu","ﾠLuxembourg",
+".lv","ﾠLatvia",
+".ly","ﾠLibya",
+".ma","ﾠMorocco",
+".mc","ﾠMonaco",
+".md","ﾠMoldova","Marketed for Medical use (Doctors)"
+".me","ﾠMontenegro",
+".mg","ﾠMadagascar",
+".mh","ﾠMarshall Islands",
+".mk","ﾠMacedonia","Restricted to registration with a company in Macedonia"
+".ml","ﾠMali",
+".mm","ﾠMyanmar",
+".mn","ﾠMongolia","Some second-level domains are reserved for special use .mn[clarification needed]"
+".mo","ﾠMacau","Special administrative region of the People's Republic of China."
+".mp","ﾠNorthern Mariana Islands",
+".mq","ﾠMartinique",
+".mr","ﾠMauritania",
+".ms","ﾠMontserrat",
+".mt","ﾠMalta",
+".mu","ﾠMauritius",
+".mv","ﾠMaldives",
+".mw","ﾠMalawi",
+".mx","ﾠMexico",
+".my","ﾠMalaysia","Restricted to registration by an individual or company in Malaysia"
+".mz","ﾠMozambique",
+".na","ﾠNamibia",
+".nc","ﾠNew Caledonia",
+".ne","ﾠNiger",
+".nf","ﾠNorfolk Island",
+".ng","ﾠNigeria",
+".ni","ﾠNicaragua",
+".nl","ﾠNetherlands","First official country code TLD.[10]"
+".no","ﾠNorway","Restricted to registration by a company in Norway. Individuals in the country can only register under .priv.no."
+".np","ﾠNepal",
+".nr","ﾠNauru","Also used as a free domain service to the public as co.nr."
+".nu","ﾠNiue","Commonly used by Danish, Dutch and Swedish websites, because in those languages ""nu"" means ""now""."
+".nz","ﾠNew Zealand",
+".om","ﾠOman","Registrant must have company or trademark registered in Oman as well as a local administrative contact."
+".pa","ﾠPanama",
+".pe","ﾠPeru",
+".pf","ﾠFrench Polynesia","With Clipperton Island"
+".pg","ﾠPapua New Guinea",
+".ph","ﾠPhilippines",
+".pk","ﾠPakistan","Operated by PKNIC since 1992."
+".pl","ﾠPoland",
+".pm","ﾠSaint-Pierre and Miquelon","Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.[a 10]"
+".pn","ﾠPitcairn Islands",
+".pr","ﾠPuerto Rico",
+".ps","ﾠPalestinian territories","West Bank and Gaza Strip."
+".pt","ﾠPortugal",
+".pw","ﾠPalau",
+".py","ﾠParaguay",
+".qa","ﾠQatar",
+".re","�R�union","Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.[a 10]"
+".ro","ﾠRomania",
+".rs","ﾠSerbia",
+".ru","ﾠRussia","See also .su, still in use, and .??."
+".rw","ﾠRwanda",
+".sa","ﾠSaudi Arabia","Registrant must have a registered trademark in Saudi Arabia matching the domain name to register or provide company incorporation documents of a company in Saudi Arabia or for personal registrations a copy of valid ID. A letter on the official letterhead of your organization addressed to SaudiNIC requesting the domain name registration is also required. Local administrative contact required."
+".sb","ﾠSolomon Islands",
+".sc","ﾠSeychelles",
+".sd","ﾠSudan",
+".se","ﾠSweden",
+".sg","ﾠSingapore",
+".sh","ﾠSaint Helena",
+".si","ﾠSlovenia",
+".sj","ﾠSvalbard and","Not in use (Norwegian dependencies; see .no)."
+,"ﾠJan Mayen Islands",
+".sk","ﾠSlovakia","Restricted to Slovakian companies, organisations and citizens"
+".sl","ﾠSierra Leone",
+".sm","ﾠSan Marino","Domain name must be same as company name or trademark"
+".sn","ﾠSenegal",
+".so","ﾠSomalia","ﾠ Relaunched on November 1st, 2010"
+".sr","ﾠSuriname",
+".ss","ﾠSouth Sudan",
+".st","�S�o Tom� and Pr�ncipe",
+".su","ﾠSoviet Union","Still in Use."
+".sv","ﾠEl Salvador",
+".sx","ﾠSint Maarten","Landrush phase"
+".sy","ﾠSyria",
+".sz","ﾠSwaziland",
+".tc","�Turks and Caicos Islands",".TC domains are also marketed in Turkey. The official abbreviation of 'T�rkiye Cumhuriyeti' is TC."
+".td","ﾠChad","Chadian (.td) domains are available for registration to entities connected with Chad only."
+".tf","ﾠFrench Southern and Antarctic Lands","Seldom used. Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.[a 10]"
+".tg","ﾠTogo",
+".th","ﾠThailand",
+".tj","ﾠTajikistan",
+".tk","ﾠTokelau","Also used as a free domain service to the public."
+".tl","ﾠEast Timor","Old code .tp is still in use."
+".tm","ﾠTurkmenistan",
+".tn","ﾠTunisia",
+".to","ﾠTonga","Often used unofficially for Torrent, Turin, Toronto, or Tokyo"
+".tp","ﾠEast Timor","ISO code has changed to TL; .tl is now assigned but .tp is still in use."
+".tr","ﾠTurkey",".nc.tr used by Northern Cyprus"
+".tt","ﾠTrinidad and Tobago",
+".tv","ﾠTuvalu, dotTV","Used as an abbreviation of television, the domain is currently operated by dotTV, a VeriSign company; the Tuvalu government owns twenty percent of the company."
+".tw","ﾠTaiwan","Registration allowed worldwide, local presence not required."
+".tz","ﾠTanzania","Must have a presence in Tanzania"
+".ua","ﾠUkraine","Ukrainian trademark required"
+".ug","ﾠUganda",
+".uk","ﾠUnited Kingdom","ISO 3166-1 code is gb, but .uk correctly correlates with the state of the United Kingdom of Great Britain and Northern Ireland. The use of .gb would exclude Northern Ireland"
+".us","ﾠUnited States of America","Commonly used by US State and local governments instead of .gov TLD"
+".uy","ﾠUruguay",
+".uz","ﾠUzbekistan",
+".va","ﾠVatican City","Limited to the official sites of the Vatican/Holy See"
+".vc","ﾠSaint Vincent and the Grenadines",
+".ve","ﾠVenezuela",
+".vg","ﾠBritish Virgin Islands",
+".vi","ﾠUnited States Virgin Islands",
+".vn","ﾠVietnam",
+".vu","ﾠVanuatu",
+".wf","ﾠWallis and Futuna","Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.[a 10]"
+".ws","ﾠSamoa","Marketed to be used in general WebSites"
+".ye","ﾠYemen",
+".yt","ﾠMayotte","Restricted to individuals and companies in European Union, Switzerland, Norway, Iceland and Liechtenstein.[a 10]"
+".yu","ﾠSFR Yugoslavia","After dissolution of Yugoslavia used for Serbia and Montenegro. Not used after 2010."
+,"ﾠFR Yugoslavia",
+".za","ﾠSouth Africa",
+".zm","ﾠZambia",
+".zw","ﾠZimbabwe",
