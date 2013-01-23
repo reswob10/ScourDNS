@@ -1,5 +1,5 @@
 
-# Files needed to run this script:  masterlist.txt, list of blacklists, greylist.txt,
+# Files needed to run this script:  masterlist.txt, newblack.txt, list of blacklists, greylist.txt,
 # countrycode list in csv formate (wonder if there is some way to automate getting this)
 
 # need to find way to fully parse line and get snd rcv and other codes per
@@ -25,10 +25,11 @@ parser.add_argument('-top', dest='topdoms', action='store', default = 10, help =
 parser.add_argument('-bottom', dest='botdoms', action='store', default = 30, help = "This is the number of bottom domains to list. Default is 30.")
 parser.add_argument('-s', dest='sleep1', action='store', default = 0, help="This is how many seconds the program should sleep before running again. Default is 0, which means the program stops after one run.")
 parser.add_argument('-test', action='store_true', help="set this switch to tell the program whether or not run is testing.  No changes to master file are made.")
+parser.add_argument('-update', action='store_true', help='set this switch to update the config file')
 parser.add_argument('-create', action='store_true', help='set this switch to create a new config file.  NOTE: This will overwrite any old config files')
 parser.add_argument('-config', action='store_true', help='set this swtich to print the configuration then exit.')
 parser.add_argument('-ig', action='store_true', help='set this switch to ignore tracking web sites.  See configuration for list')
-parser.add_argument('-d', dest='days', action='store', default = 1, help =  "Number of days in the past to start checking DNS logs.  Default is 1 day.")
+parser.add_argument('-d', dest='days', action='store', default = 1, help =  "Number of days ago to start checking DNS logs.  Default is 1 day.")
 #parser.add_argument('-help', action='store_true', help='display help')
 args = parser.parse_args()
 
@@ -89,17 +90,7 @@ def createconfig():
         print ' Now you must select the file contains your domain greylists.'
         greyfile = tkFileDialog.askopenfilename()
     else: greyfile = 'None'
-    print '\n\n During the times this program is set to run continuously, there may be '
-    print 'times where you want to add new blacklisted domains.  Rather than stopping'
-    print 'and restarting the program, you can add these domains to a specific file '
-    print 'that the program will check each time it comes out of sleep mode.  '
-    print 'While this file is optional, it is suggested to at least identify such a file in case '
-    print ' it is ever needed.  The file does not need to have any entries until and unless you decide to add FQDNs. '
-    checkthis = raw_input( '\nDo you want to select a file that will contain any update blacklists?  (y/n)  ')
-    if checkthis == 'y' or checkthis =='Y':
-        print ' Now you must select the file that will contain the blacklisted domains you add.'
-        newblackfile = tkFileDialog.askopenfilename()  
-    else: newblackfile = 'None'
+    newblackfile = 'None'
     print '\n\n It is important to identify you own internal networks.  If machines external '
     print 'to your network are using you DNS, this may be a cause for concern because it can '
     print 'signal a misconfigured machine on someone else\'s network or malicious traffic.  '
@@ -176,7 +167,6 @@ def loadblacklist():
         for line in black:
             blacklist.append(line.rstrip())
             cnt = cnt + 1
-            print cnt
         black.close()
     print 'The number of entries in the black list is ', cnt
 
@@ -337,11 +327,7 @@ master = open('masterlist.txt', 'ab')
 badcount = 0
 
 
-# this is the blacklist that you can add newly found FQDNs to while script is running.  
-# the script will check this file on every loop.  If the modified time is newer than the checktime, it will load the FQDNs into the blacklist
-# newblack = 'C:/Python27/projects/newblack.txt'
-# ['blacklist.txt'] #['different blacklists to load', 'files listed in same manner as dns logs above'] #'blacklist.txt',
-#  Blist = [ 'C:/Python27/projects/radar.txt', 'C:/Python27/blacklists/blacklists/hacking/domains', 'C:/Python27/blacklists/blacklists/warez/domains', 'C:/Python27/blacklists/blacklists/suspect/domains', 'C:/Python27/blacklists/blacklists/violence/domains']#['blacklist.txt']
+
 loadblacklist()
 # load all greylists.  These are domains that may be suspicious, but appear too often to be indicators in of themselves
 if grey1 != 'None' : loadgreylist()
@@ -677,16 +663,7 @@ while 1:
             topcountry2day = csv.reader(output3)
             list1 = {}
  
-            # for line in topcountry2day:
-                  # if line[1] == 'Count': continue
-                  # list1[line[0]] = int(line[1])
-            # # We then sort that list and print out the top ten from that list
-            # nationsortedlist = sorted(list1.items(),key=lambda x: x[1])  # By value
-            # nationsortedlist.reverse()
-            # print '\nThese are the top countries or domains hit today.\n'
-            # cntcountry = len(nationsortedlist) - 1
-            # for x in range(0,cntcountry):
-                # print nationsortedlist[x][0], '\t\t', str(nationsortedlist[x][1])#[:-2]
+
             sys.exit()
         print '\n'
     elif sleep1 == 0 or runtime == 0:  
@@ -726,20 +703,7 @@ while 1:
             if args.vlevel > 0: print str(key) + '\t' + str(countrycount[key]) + '\t' + str(countrycode)
             topcountries.writerow([key, countrycount[key], countrycode])
         output3.close()
-        # Then we reopen the file and read it all back in to a list.
-        # output3 = open(topctry, 'rb')
-        # topcountry2day = csv.reader(output3)
-        # list1 = {}
-        # for line in topcountry2day:
-             # if line[1] == 'Count': continue
-             # list1[line[0]] = int(line[1])
-        # # We then sort that list and print out the top ten from that list
-        # nationsortedlist = sorted(list1.items(),key=lambda x: x[1])  # By value
-        # nationsortedlist.reverse()
-        # print '\nThese are the top countries or domains hit today.\n'
-        # cntcountry = len(nationsortedlist) - 1
-        # for x in range(0,cntcountry):
-            # print nationsortedlist[x][0], '\t\t', str(nationsortedlist[x][1])#[:-2]
+
         sys.exit()
     else: runtime = runtime - 1
      
