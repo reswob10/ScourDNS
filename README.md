@@ -109,7 +109,9 @@ The following options are available when running the script:
 	-- show more detail of what the script is either doing or finding.
 
 
+As an companion script, there is find_ips.py.
 
+This script will enable you to find all the IP addresses that made a DNS request for a domain.  This check can be done against a full FQDN (e.g. www.sample.com), a domain only (e.g. sample.com) or a TLD (e.g. com).  It will search the complete DNS debug log and create an output file will all hits against the search term you provided.  Future enhancements will give you the ability to search a particular time frame only.  This way the search won't take as long.  
 
 
 
