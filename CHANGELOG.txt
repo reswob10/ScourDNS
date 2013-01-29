@@ -1,0 +1,8 @@
+CHANGELOG
+
+28 Feb 2013
+
+-- changed how configuration works so that it does not overwright the old config file until you have confirmed the new configuration.
+-- Removed last traces of using a separate file to add to the blacklist. Any additions/subtractions to the black list are done to files listed in the configuration
+
+

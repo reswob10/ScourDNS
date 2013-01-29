@@ -246,8 +246,7 @@ if len(intip) > 0:
 else: print '\nThe program will not check to see if unauthorized IPs are using your DNS server.'
 if grey1 == 'None':  print '\n No greylists will be checked.'
 else: print '\nThe following Greylist will be checked: ', grey1
-# if newblack == 'None': print '\n No files will be checked additions to the blacklist'
-# else: print '\n The following file will be check for additions to the blacklist: ', newblack
+
 if args.ig == True and len(IGDOMAINS) > 0:
     print '\nThe following domains will be counted but not be added to the masterlist.'
     for domain in IGDOMAINS: print domain
@@ -324,11 +323,7 @@ master = open('masterlist.txt', 'ab')
 badcount = 0
 
 
-# this is the blacklist that you can add newly found FQDNs to while script is running.  
-# the script will check this file on every loop.  If the modified time is newer than the checktime, it will load the FQDNs into the blacklist
-# newblack = 'C:/Python27/projects/newblack.txt'
-# ['blacklist.txt'] #['different blacklists to load', 'files listed in same manner as dns logs above'] #'blacklist.txt',
-#  Blist = [ 'C:/Python27/projects/radar.txt', 'C:/Python27/blacklists/blacklists/hacking/domains', 'C:/Python27/blacklists/blacklists/warez/domains', 'C:/Python27/blacklists/blacklists/suspect/domains', 'C:/Python27/blacklists/blacklists/violence/domains']#['blacklist.txt']
+#['blacklist.txt']
 loadblacklist()
 # load all greylists.  These are domains that may be suspicious, but appear too often to be indicators in of themselves
 if grey1 != 'None' : loadgreylist()
