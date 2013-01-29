@@ -49,7 +49,6 @@ def is_number(s):
 def createconfig():
 
     print '\n\nYou have chosen to create a new configuration for the DNS script. '
-    print 'This will overwrite the current configuration file if present!'
     checkthis = raw_input ('Do you want to continue? (y/n)  ')
     answers = ['y', 'Y']
     if checkthis not in answers:
@@ -57,7 +56,6 @@ def createconfig():
         print 'The program will now exit.'
         sys.exit()
     config = 'dnsconfig.txt'
-    writeconfig = open('config.txt', 'wb')
     print '\n\nFirst you must chose one or more DNS debug log files the program '
     print ' will read during each run.'
     print 'Remember, these log files must be on a mapped drive.'
@@ -90,7 +88,6 @@ def createconfig():
         print ' Now you must select the file contains your domain greylists.'
         greyfile = tkFileDialog.askopenfilename()
     else: greyfile = 'None'
-    newblackfile = 'None'
     print '\n\n It is important to identify you own internal networks.  If machines external '
     print 'to your network are using you DNS, this may be a cause for concern because it can '
     print 'signal a misconfigured machine on someone else\'s network or malicious traffic.  '
@@ -130,21 +127,20 @@ def createconfig():
     print ' These are the blacklist files you chose:  '
     if len(blackfiles) == 0: print 'None'
     else:
-        for black in blackfiles:
-            print black
+        for black in blackfiles: print black
     print ' These is the greylist file you chose:\n', greyfile
     print ' These are the networks that you entered as valid users of your DNS server:  '
-    for ip in getips:
-        print ip
-    print 'This is the file you listed that the program will check for new blacklisted domains '
-    print 'while it is running:\n', newblackfile
+    for ip in getips: print ip
+    print 'These are the domains you will not have entered into the master list:  '
+    for dom in ignoredomains: print dom
+    print 'If you choose yes to the following question, you will overwrite the current configuration file if present!'
     checkthis = raw_input ('Is the above information correct?  (y/n)  ')
     if checkthis == 'y' or checkthis == 'Y':
+        writeconfig = open('config.txt', 'wb')
         for log in logfiles: writeconfig.write('DNS_DEBUG_FILES=' + log +'\n')
         for black in blackfiles: writeconfig.write('BLACKLIST_FILES=' + black +'\n')
         for ig in ignoredomains: writeconfig.write('DOMAINS_IGNORE=' + ig + '\n')
         writeconfig.write('GREYLIST_FILE=' + greyfile +'\n')
-        writeconfig.write('NEW_BLACKLIST_FILE=' + newblackfile +'\n')
         for ip in getips: writeconfig.write('SAFE_IPS=' + ip + '\n')
         print ' Thank you for setting up your configuration file.  If at any time you want to edit '
         print 'this file, simply rerun the script with the -create switch.  To review your settings, '  
@@ -152,7 +148,8 @@ def createconfig():
         writeconfig.close()
         sys.exit()
     else:
-        print ' Please restart the program with the -create switch and verify each entry before hitting return.'  
+        print 'Current configuration remains unchanged.'
+        print 'Please restart the program with the -create switch and verify each entry before hitting return.'  
         sys.exit()
 
 # function to load the blacklist and reload the blacklist if it changes
@@ -254,7 +251,7 @@ else: print '\nThe following Greylist will be checked: ', grey1
 if args.ig == True and len(IGDOMAINS) > 0:
     print '\nThe following domains will be counted but not be added to the masterlist.'
     for domain in IGDOMAINS: print domain
-if args.ig == False: print '\nYou have selected NOT to ignore any domains.'
+if args.ig == False: print '\nYou have selected NOT to ignore any domains. \n(To ignore domains, run the same command with the -ig switch)'
 print '\nThe script will start checking log entries starting ', args.days, ' days ago.'
 
 if args.config == True: sys.exit()
@@ -327,7 +324,11 @@ master = open('masterlist.txt', 'ab')
 badcount = 0
 
 
-
+# this is the blacklist that you can add newly found FQDNs to while script is running.  
+# the script will check this file on every loop.  If the modified time is newer than the checktime, it will load the FQDNs into the blacklist
+# newblack = 'C:/Python27/projects/newblack.txt'
+# ['blacklist.txt'] #['different blacklists to load', 'files listed in same manner as dns logs above'] #'blacklist.txt',
+#  Blist = [ 'C:/Python27/projects/radar.txt', 'C:/Python27/blacklists/blacklists/hacking/domains', 'C:/Python27/blacklists/blacklists/warez/domains', 'C:/Python27/blacklists/blacklists/suspect/domains', 'C:/Python27/blacklists/blacklists/violence/domains']#['blacklist.txt']
 loadblacklist()
 # load all greylists.  These are domains that may be suspicious, but appear too often to be indicators in of themselves
 if grey1 != 'None' : loadgreylist()
@@ -663,7 +664,16 @@ while 1:
             topcountry2day = csv.reader(output3)
             list1 = {}
  
-
+            # for line in topcountry2day:
+                  # if line[1] == 'Count': continue
+                  # list1[line[0]] = int(line[1])
+            # # We then sort that list and print out the top ten from that list
+            # nationsortedlist = sorted(list1.items(),key=lambda x: x[1])  # By value
+            # nationsortedlist.reverse()
+            # print '\nThese are the top countries or domains hit today.\n'
+            # cntcountry = len(nationsortedlist) - 1
+            # for x in range(0,cntcountry):
+                # print nationsortedlist[x][0], '\t\t', str(nationsortedlist[x][1])#[:-2]
             sys.exit()
         print '\n'
     elif sleep1 == 0 or runtime == 0:  
@@ -703,7 +713,20 @@ while 1:
             if args.vlevel > 0: print str(key) + '\t' + str(countrycount[key]) + '\t' + str(countrycode)
             topcountries.writerow([key, countrycount[key], countrycode])
         output3.close()
-
+        # Then we reopen the file and read it all back in to a list.
+        # output3 = open(topctry, 'rb')
+        # topcountry2day = csv.reader(output3)
+        # list1 = {}
+        # for line in topcountry2day:
+             # if line[1] == 'Count': continue
+             # list1[line[0]] = int(line[1])
+        # # We then sort that list and print out the top ten from that list
+        # nationsortedlist = sorted(list1.items(),key=lambda x: x[1])  # By value
+        # nationsortedlist.reverse()
+        # print '\nThese are the top countries or domains hit today.\n'
+        # cntcountry = len(nationsortedlist) - 1
+        # for x in range(0,cntcountry):
+            # print nationsortedlist[x][0], '\t\t', str(nationsortedlist[x][1])#[:-2]
         sys.exit()
     else: runtime = runtime - 1
      
